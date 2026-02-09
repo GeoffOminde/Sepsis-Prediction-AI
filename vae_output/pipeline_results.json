@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-02-09T13:02:04.576392",
+  "pipeline_type": "VAE Generative AI",
+  "data_preparation": "complete",
+  "training": {
+    "final_val_accuracy": 0.5573333333333333,
+    "final_val_loss": 6.534691174825032,
+    "epochs_trained": 51
+  },
+  "evaluation": {
+    "sensitivity": 0.9285714285714286,
+    "specificity": 0.4090909090909091,
+    "ppv": 0.21621621621621623,
+    "npv": 0.9702602230483272,
+    "accuracy": 0.4866666666666667,
+    "auc_roc": 0.823261867442902,
+    "mean_uncertainty": 0.17536742985248566,
+    "n_test_samples": 750
+  },
+  "ethics": {
+    "fairness_analysis": "complete",
+    "bias_detection": "complete",
+    "ethics_report_path": "vae_output\\ethics\\ethics_report.json"
+  },
+  "deployment": {
+    "model_path": "vae_output\\deployment\\sepsis_vae_model.pth",
+    "scaler_path": "vae_output\\deployment\\feature_scaler.pkl",
+    "status": "ready"
+  },
+  "completed_at": "2026-02-09T13:13:19.216410",
+  "status": "SUCCESS"
+}

@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-02-09T13:13:19.178462",
+  "model_type": "Variational Autoencoder (VAE)",
+  "ethical_principles": {
+    "fairness": {
+      "gender": {
+        "M": {
+          "sensitivity": 0.76,
+          "specificity": 0.7896440129449838,
+          "ppv": 0.36893203883495146,
+          "npv": 0.953125,
+          "accuracy": 0.7855153203342619,
+          "mean_uncertainty": 0.1764119565486908,
+          "sample_size": 359,
+          "sepsis_prevalence": 0.13927575945854187
+        },
+        "F": {
+          "sensitivity": 0.7419354838709677,
+          "specificity": 0.7933130699088146,
+          "ppv": 0.40350877192982454,
+          "npv": 0.9422382671480144,
+          "accuracy": 0.7851662404092071,
+          "mean_uncertainty": 0.17623618245124817,
+          "sample_size": 391,
+          "sepsis_prevalence": 0.15856777131557465
+        },
+        "fairness_gap": 0.01806451612903226
+      },
+      "age": {
+        "Senior (61-80)": {
+          "sensitivity": 0.7692307692307693,
+          "specificity": 0.7741935483870968,
+          "ppv": 0.36363636363636365,
+          "npv": 0.9523809523809523,
+          "accuracy": 0.7734806629834254,
+          "mean_uncertainty": 0.17754709720611572,
+          "sample_size": 362,
+          "sepsis_prevalence": 0.14364640414714813
+        },
+        "Middle (41-60)": {
+          "sensitivity": 0.7674418604651163,
+          "specificity": 0.8167539267015707,
+          "ppv": 0.4852941176470588,
+          "npv": 0.9397590361445783,
+          "accuracy": 0.8076923076923077,
+          "mean_uncertainty": 0.1768570989370346,
+          "sample_size": 234,
+          "sepsis_prevalence": 0.18376068770885468
+        },
+        "Elderly (80+)": {
+          "sensitivity": 0.6428571428571429,
+          "specificity": 0.8163265306122449,
+          "ppv": 0.3333333333333333,
+          "npv": 0.9411764705882353,
+          "accuracy": 0.7946428571428571,
+          "mean_uncertainty": 0.1714809238910675,
+          "sample_size": 112,
+          "sepsis_prevalence": 0.125
+        },
+        "Young (18-40)": {
+          "sensitivity": 0.6666666666666666,
+          "specificity": 0.7435897435897436,
+          "ppv": 0.16666666666666666,
+          "npv": 0.9666666666666667,
+          "accuracy": 0.7380952380952381,
+          "mean_uncertainty": 0.17566101253032684,
+          "sample_size": 42,
+          "sepsis_prevalence": 0.0714285746216774
+        },
+        "fairness_gap": 0.12637362637362637
+      }
+    },
+    "bias_detection": {
+      "gender_separation": {
+        "absolute": 0.11233129417863524,
+        "normalized": 0.11769579480923123
+      }
+    },
+    "transparency": {
+      "model_architecture": "VAE with encoder-decoder structure",
+      "latent_dimension": 8,
+      "total_parameters": 9218,
+      "interpretability": "Latent space analysis, uncertainty quantification"
+    },
+    "privacy": {
+      "data_protection": "HIPAA-compliant design",
+      "patient_id_hashing": "SHA-256",
+      "synthetic_data_generation": "Enabled for privacy-preserving sharing"
+    },
+    "safety": {
+      "uncertainty_quantification": "Monte Carlo sampling (10 samples)",
+      "false_negative_mitigation": "High sensitivity threshold",
+      "clinical_override": "Always available to clinicians",
+      "alert_fatigue_prevention": "Risk-based prioritization"
+    },
+    "accountability": {
+      "audit_logging": "All predictions logged",
+      "model_versioning": "Enabled",
+      "performance_monitoring": "Continuous",
+      "human_oversight": "Required for all clinical decisions"
+    }
+  },
+  "recommendations": [
+    "\u26a0 Age fairness gap (0.126) exceeds threshold. Consider: (1) Collecting more diverse training data, (2) Applying fairness constraints during training, (3) Post-processing calibration per group",
+    "\u2713 Implement continuous fairness monitoring in production",
+    "\u2713 Conduct regular bias audits (quarterly recommended)",
+    "\u2713 Maintain diverse clinical validation cohorts",
+    "\u2713 Provide uncertainty estimates with all predictions",
+    "\u2713 Enable clinical override for all AI recommendations",
+    "\u2713 Document all model updates and performance changes",
+    "\u2713 Ensure clinician training on AI limitations",
+    "\u2713 Establish clear escalation procedures for high-risk cases"
+  ]
+}

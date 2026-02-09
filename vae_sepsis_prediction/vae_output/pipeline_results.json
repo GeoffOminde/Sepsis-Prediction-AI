@@ -1,0 +1,31 @@
+{
+  "started_at": "2025-12-30T19:53:29.814894",
+  "pipeline_type": "VAE Generative AI",
+  "data_preparation": "complete",
+  "training": {
+    "final_val_accuracy": 0.8493333333333334,
+    "final_val_loss": 1.8489664594332378,
+    "epochs_trained": 23
+  },
+  "evaluation": {
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "ppv": 0.0,
+    "npv": 0.8506666666666667,
+    "accuracy": 0.8506666666666667,
+    "auc_roc": 0.5427955665024631,
+    "mean_uncertainty": 0.02323438785970211,
+    "n_test_samples": 750
+  },
+  "ethics": {
+    "fairness_analysis": "complete",
+    "bias_detection": "complete",
+    "ethics_report_path": "vae_output\\ethics\\ethics_report.json"
+  },
+  "deployment": {
+    "model_path": "vae_output\\deployment\\sepsis_vae_model.pth",
+    "status": "ready"
+  },
+  "completed_at": "2025-12-30T19:54:08.677626",
+  "status": "SUCCESS"
+}

@@ -1,0 +1,10 @@
+{
+  "sensitivity": 0.0,
+  "specificity": 1.0,
+  "ppv": 0.0,
+  "npv": 0.8506666666666667,
+  "accuracy": 0.8506666666666667,
+  "auc_roc": 0.5427955665024631,
+  "mean_uncertainty": 0.02323438785970211,
+  "n_test_samples": 750
+}
